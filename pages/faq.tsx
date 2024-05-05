@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     "question": "Are there any requirements to enter Colombia?",
-    "answer": "Travelers with a US passport do not need a visa for Colombia. You must complete the Check-Mig form for both entry and exit. Please use the official website at www.migracioncolombia.gov.co to avoid scams that charge unnecessary fees."
+    "answer": "Travelers with a US passport do not need a visa for Colombia. You must complete the Check-Mig form for entry. Please use the official website at https://apps.migracioncolombia.gov.co/pre-registro/ to avoid scams that charge unnecessary fees."
   }
   // Add more FAQs here as needed
 ];
@@ -33,7 +33,7 @@ export default function Faq() {
           {faqs.map((faq, index) => (
             <div key={index} className={styles.faq}>
               <h2 className={styles.question}>{faq.question}</h2>
-              <p className={styles.answer} dangerouslySetInnerHTML={{ __html: faq.answer.replace('www.migracioncolombia.gov.co', `<a href='https://www.migracioncolombia.gov.co' className='${styles.externalLink}'>www.migracioncolombia.gov.co</a>`) }}></p>
+              <p className={styles.answer} dangerouslySetInnerHTML={{ __html: faq.answer.replace('https://apps.migracioncolombia.gov.co/pre-registro', `<a href='https://apps.migracioncolombia.gov.co/pre-registro' className='${styles.externalLink}'>https://apps.migracioncolombia.gov.co/pre-registro</a>`) }}></p>
             </div>
           ))}
         </div>
