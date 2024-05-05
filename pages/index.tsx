@@ -13,17 +13,17 @@ export default function Home() {
     <>
       <Head>
         <title>A Moment in the Mountains - Lisa & Henry's Wedding</title>
-        <meta name='description' content={t('welcome')} />
+        <meta name='description' content="We're so excited to celebrate this big day with all our friends and family. Thanks so much for being a part of our journey and sharing in our happiness ❤️" />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
         <section className={styles.header}>
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
           <h1 className={styles.title}>
             A Moment in the Mountains - Lisa and Henry's Wedding
           </h1>
-          <p className={styles.greeting}>{t('welcome')}</p>
+          <p className={styles.greeting}>We're so excited to celebrate this big day with all our friends and family. Thanks so much for being a part of our journey and sharing in our happiness ❤️</p>
         </section>
         <div className={styles.imageGridContainer}>
           <div className={styles.imageGrid}>
@@ -100,8 +100,14 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.event}>
-            <h2>Dress Code</h2>
-            <p>Semi-formal</p>
+            <h2>More Information</h2>
+            <p>
+              For more details about the wedding, please visit our{' '}
+              <Link href='/faq' className={styles.link}>
+                FAQ Page
+              </Link>
+              .
+            </p>
           </div>
         </section>
       </main>

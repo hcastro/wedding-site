@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+
+.faqContainer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 1rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  color: var(--accent-color);
+}
+
+.answer {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--secondary-text-color);
+  margin-top: 5px;
+}
+
+.title {
+  text-align: center;
+  color: var(--accent-color);
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .faqContainer {
+    padding: 2rem;
+  }
+
+  .question {
+    font-size: 1.8rem;
+  }
+
+  .answer {
+    font-size: 1.2rem;
+  }
+}
+
+.externalLink {
+  color: #0070f3; /* Example blue color */
+  text-decoration: none; /* No underline */
+}
+
+.externalLink:hover {
+  text-decoration: underline; /* Underline on hover */
+}
