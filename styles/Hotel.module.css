@@ -1,0 +1,40 @@
+.main {
+  padding: 20px;
+  text-align: center;
+  color: #b2bec3;
+  background-color: #1e272e;
+  max-width: 600px; /* Match the width with the home page */
+  margin: auto; /* Center the main content horizontally */
+}
+
+.header {
+  font-size: 2.5rem;
+  color: var(--accent-color); /* Ensure the main header stands out */
+  margin-bottom: 1rem; /* Add some space below the header for separation */
+}
+
+.section {
+  margin-top: 20px;
+  color: #cfd8dc; /* Lighter gray for better readability */
+}
+
+.subheader {
+  font-size: 1.8rem; /* Increase size for visibility */
+  color: var(--accent-color); /* A lighter blue that's easy on the eyes */
+  margin-bottom: 0.5rem; /* Space out sections */
+}
+
+.list {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 600px;
+  font-size: 1.1rem; /* Slightly larger font for readability */
+}
+
+
+.image {
+  margin-top: 20px;
+  border-radius: 8px; /* Add rounding to images for aesthetics */
+}

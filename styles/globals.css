@@ -1,107 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+
 :root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  --text-color: #ffffff; /* White for primary text */
+  --secondary-text-color: #b2bec3; /* Slate Gray for secondary text */
+  --background-color: #1e272e; /* Charcoal Blue for background */
+  --accent-color: #16a085; /* Medium Sea Green for primary accents */
+  --secondary-accent-color: #0abde3; /* Vivid Sky Blue for vibrant accents */
+  --tertiary-accent-color: #2f3542; /* Dark Slate Blue for headers */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Playfair Display', serif;
+  --link-color: #0abde3; /* Uniform link color across the site */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--tertiary-accent-color);
+}
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+.title {
+  font-size: 2.5rem;
+  color: var(--accent-color); /* Use primary accent color for titles */
+}
 
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+.date {
+  font-size: 1.2rem;
+  color: var(--secondary-accent-color); /* Use secondary accent color for dates */
+}
+
+.details {
+  background-color: #2f3542; /* Tertiary accent color for detail boxes */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event p {
+  color: var(--secondary-text-color); /* Secondary text color for less emphasis */
+}
+
+a { /* Global style for all links */
+  color: var(--link-color); /* Use the --link-color variable for easy management */
+  text-decoration: none; /* Optional: Removes underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: Adds underline on hover for better user interaction */
+}
+
+@media (min-width: 600px) {
+  .main {
+    padding: 2rem;
   }
-}
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  .title {
+    font-size: 2.5rem;
+  }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+  .date {
+    font-size: 1.2rem;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .details {
+    max-width: 600px; /* Fixed width on larger screens */
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .event h2 {
+    font-size: 1.5rem;
   }
 }
