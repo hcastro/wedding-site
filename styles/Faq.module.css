@@ -5,6 +5,7 @@
   /* text-align: center; */
   color: #b2bec3;
   background-color: #1e272e;
+  min-height: 100vh;
   max-width: 600px; /* Match the width with the home page */
   margin: auto; /* Center the main content horizontally */
 }
@@ -43,21 +44,6 @@
   background: linear-gradient(-70deg, var(--accent-color) 0%, #64acff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-
-@media (min-width: 600px) {
-  .faqContainer {
-    padding: 0.5rem;
-  }
-
-  .question {
-    font-size: 1.8rem;
-  }
-
-  .answer {
-    font-size: 1.2rem;
-  }
 }
 
 .externalLink {

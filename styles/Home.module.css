@@ -58,33 +58,13 @@
   color: var(--text-color);
 }
 
-@media (min-width: 600px) {
-  .main {
-    padding: 2rem;
-  }
 
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .date {
-    font-size: 1.2rem;
-  }
-
-  .details {
-    max-width: 600px; /* Fixed width on larger screens */
-  }
-
-  .event h2 {
-    font-size: 1.5rem;
-  }
-}
 
 .imageGridContainer {
   max-width: 600px;
-  width: 100%; /* Ensure it takes full width up to the max */
+  width: 100%;
   margin: 0 auto;
-  height: 515px; /* Set a specific height for the container */
+  height: 515px;
 }
 
 .imageGrid {
@@ -109,8 +89,8 @@
 
 .imageWrapper {
   position: relative;
-  width: 100%; /* Adjust based on your layout */
-  height: 100%; /* Adjust based on your layout */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -125,11 +105,11 @@
 }
 
 .link {
-  color: #0abde3; /* Example: Vivid Sky Blue for links */
-  text-decoration: underline; /* Add underline to make it clear it's a link */
+  color: #0abde3;
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .link:hover {
-  color: #16a085; /* Darker shade of green on hover */
+  color: #16a085;
 }

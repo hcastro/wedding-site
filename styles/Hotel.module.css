@@ -3,6 +3,7 @@
   /* text-align: center; */
   color: #b2bec3;
   background-color: #1e272e;
+  min-height: 100vh;
   max-width: 600px; /* Match the width with the home page */
   margin: auto; /* Center the main content horizontally */
 }

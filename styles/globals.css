@@ -53,21 +53,19 @@ a:hover {
 }
 
 @media (min-width: 600px) {
-  .main {
+  /* .main {
     padding: 2rem;
-  }
+  } */
 
-  .title {
+  /* .title {
     font-size: 2.5rem;
-  }
+  } */
 
-  .date {
+  /* .date {
     font-size: 1.2rem;
-  }
+  } */
 
-  .details {
-    max-width: 600px; /* Fixed width on larger screens */
-  }
+
 
   .event h2 {
     font-size: 1.5rem;

@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  /* padding: 1rem; */
+  padding: 1rem;
+  margin: auto;
   background-color: var(--background-color); /* Use global background color */
   color: var(--text-color); /* Use global text color */
 }
