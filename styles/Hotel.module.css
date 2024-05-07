@@ -1,6 +1,6 @@
 .main {
-  padding: 20px;
-  text-align: center;
+  padding: 1rem;
+  /* text-align: center; */
   color: #b2bec3;
   background-color: #1e272e;
   max-width: 600px; /* Match the width with the home page */
@@ -10,7 +10,21 @@
 .header {
   font-size: 2.5rem;
   color: var(--accent-color); /* Ensure the main header stands out */
-  margin-bottom: 1rem; /* Add some space below the header for separation */
+  margin: 1rem auto;
+  max-width: 600px;
+  background: linear-gradient(-70deg, var(--accent-color) 0%, #64acff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  background: linear-gradient(-70deg, var(--accent-color) 0%, #64acff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section {
@@ -37,4 +51,27 @@
 .image {
   margin-top: 20px;
   border-radius: 8px; /* Add rounding to images for aesthetics */
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: var(--tertiary-accent-color);
+  color: var(--text-color);
 }

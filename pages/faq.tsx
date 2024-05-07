@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '@/styles/Faq.module.css';
+import Layout from '@/components/Layout/Layout';
 
 const faqs = [
   {
@@ -23,7 +24,7 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>FAQ - Lisa & Henry's Wedding</title>
       </Head>
@@ -38,6 +39,6 @@ export default function Faq() {
           ))}
         </div>
       </main>
-    </>
+    </Layout>
   );
 }

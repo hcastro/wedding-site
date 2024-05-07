@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
+import Layout from '@/components/Layout/Layout';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -10,10 +11,13 @@ export default function Home() {
   const { t } = useTranslation('common');
 
   return (
-    <>
+    <Layout>
       <Head>
         <title>A Moment in the Mountains - Lisa & Henry's Wedding</title>
-        <meta name='description' content="We're so excited to celebrate this big day with all our friends and family. Thanks so much for being a part of our journey and sharing in our happiness ❤️" />
+        <meta
+          name='description'
+          content="We're so excited to celebrate this big day with all our friends and family. Thanks so much for being a part of our journey and sharing in our happiness ❤️"
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
@@ -23,7 +27,10 @@ export default function Home() {
           <h1 className={styles.title}>
             A Moment in the Mountains - Lisa and Henry's Wedding
           </h1>
-          <p className={styles.greeting}>We're so excited to celebrate this big day with all our friends and family. Thanks so much for being a part of our journey and sharing in our happiness ❤️</p>
+          <p className={styles.greeting}>
+            We're so excited to celebrate this big day with all our friends and family.
+            Thanks so much for being a part of our journey and sharing in our happiness ❤️
+          </p>
         </section>
         <div className={styles.imageGridContainer}>
           <div className={styles.imageGrid}>
@@ -111,7 +118,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </>
+    </Layout>
   );
 }
 
